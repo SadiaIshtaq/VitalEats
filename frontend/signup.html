@@ -55,13 +55,34 @@
         </div>
       </form>
       <form id="Form3">
-        <h3>Personal</h3>
-        <div class="input type">
-          <input type="Radio" />Weight Loss <input type="Radio" />Weight Gain
+        <h2>Personal info</h2>
+        <div class="form-group">
+          <label>Goal:</label>
+          <div class="radio-group">
+            <label for="weight-loss">Weight Loss</label>
+            <input
+              type="radio"
+              id="weight-loss"
+              name="goal"
+              value="weight-loss"
+            />
+            <label for="weight-gain">Weight Gain</label>
+            <input
+              type="radio"
+              id="weight-gain"
+              name="goal"
+              value="weight-gain"
+            />
+          </div>
         </div>
-        <div class="input type">
-          How Active Are You? <input type="Radio" />Highly Active
-          <input type="Radio" />Less Active <input type="Radio" />Medium Active
+        <div class="form-group">
+          <label for="activity-level">How active are you?</label>
+          <select id="activity-level" name="activity-level" required>
+            <option value="mostly-sitting">Mostly sitting</option>
+            <option value="often-standing">Often standing</option>
+            <option value="regular-walking">Regular walking</option>
+            <option value="physically-intense">Physically intense</option>
+          </select>
         </div>
         <div class="btn-box">
           <button type="button" id="Pervious2">Previous</button>
@@ -85,21 +106,27 @@
       var Pervious1 = document.getElementById('Pervious1');
       var Pervious2 = document.getElementById('Pervious2');
 
+      var Progress = document.getElementById('Progress');
+
       Next1.onclick = function () {
         Form1.style.left = '-450px';
         Form2.style.left = '40px';
+        Progress.style.width = '240px';
       };
       Pervious1.onclick = function () {
         Form1.style.left = '40px';
         Form2.style.left = '450px';
+        Progress.style.width = '120px';
       };
       Next2.onclick = function () {
         Form2.style.left = '-450px';
         Form3.style.left = '40px';
+        Progress.style.width = '360px';
       };
       Pervious2.onclick = function () {
         Form2.style.left = '40px';
         Form3.style.left = '450px';
+        Progress.style.width = '240px';
       };
     </script>
   </body>
