@@ -1,7 +1,7 @@
 .loginform{
-    display:flex;
+    display:inline-block;
     align-items:center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
     border: 2px solid black ;
 }
