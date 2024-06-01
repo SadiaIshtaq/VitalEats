@@ -1,7 +1,47 @@
-.loginform{
-    display:inline-block;
-    align-items:center;
-    justify-content: center;
-    height: 100vh;
-    border: 2px solid black ;
+
+.container {
+  width: 360px;
+  height: 400px;
+  margin: 8% auto;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #777;
+}
+.container form {
+  width: 280px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+}
+form input {
+  width: 100px;
+  padding: 10px 5 px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+::placeholder {
+  color: #777;
+}
+.btn-box {
+  width: 100px;
+  margin: 30px auto;
+  text-align: center;
+}
+form button {
+  width: 100px;
+  height: 35px;
+  margin: 0 10px;
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
 }
