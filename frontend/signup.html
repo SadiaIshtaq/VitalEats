@@ -27,18 +27,26 @@
 
       <form id="Form2">
         <h2>Personal info</h2>
-        <div class="input type2">
-          <label>GENDER</label>
-          <input type="radio" name="GENDER" />MALE
-          <input type="radio" name="GENDER" />FEMALE
+        <div class="form-group">
+          <label>Gender:</label>
+          <div class="radio-group">
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" />
+          </div>
         </div>
-        <div class="input type2">
-          <label>AGE</label>
-          <input type="number" name="" />AGE
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
         </div>
-        <div class="input type2">
-          <input type="number" name="weight" required />Weight
-          <input type="" name="height" required />Height
+        <div class="form-group">
+          <label for="weight">Weight (kg):</label>
+          <input type="number" id="weight" name="weight" required />
+        </div>
+        <div class="form-group">
+          <label for="height">Height (cm):</label>
+          <input type="number" id="height" name="height" required />
         </div>
 
         <div class="btn-box">
