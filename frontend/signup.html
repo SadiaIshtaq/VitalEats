@@ -19,31 +19,29 @@
         <div class="input type">
           <input type="password" placeholder="Confirm Password" required />
         </div>
-
         <div class="btn-box">
-          <button type="button">Next</button>
+          <button type="button" id="Next1">Next</button>
         </div>
       </form>
 
       <form id="Form2">
         <h3>Personal info</h3>
-        <div class="input type">
-          <label>GENDER</label>
+        <div>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label>GENDER</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="radio" name="GENDER" />MALE
           <input type="radio" name="GENDER" />FEMALE
+          <input type="radio" name="GENDER" />OTHER
         </div>
-        <div class="input type">
-          <label>AGE</label>
-          <input type="number" name="" />AGE
-        </div>
+        <div class="input type"><input type="number" name="" />AGE</div>
         <div class="input type">
           <input type="number" name="weight" required />Weight
           <input type="" name="height" required />Height
         </div>
 
         <div class="btn-box">
-          <button type="button">Previous</button>
-          <button type="button">Next</button>
+          <button type="button" id="Pervious1">Previous</button>
+          <button type="button" id="Next2">Next</button>
         </div>
       </form>
       <form id="Form3">
@@ -56,7 +54,7 @@
           <input type="Radio" />Less Active <input type="Radio" />Medium Active
         </div>
         <div class="btn-box">
-          <button type="button">Previous</button>
+          <button type="button" id="Pervious2">Previous</button>
           <button type="button">Submit</button>
         </div>
       </form>
@@ -67,5 +65,32 @@
         <div class="step-col"><small>Step 3</small></div>
       </div>
     </div>
+    <script>
+      var Form1 = document.getElementById('Form1');
+      var Form2 = document.getElementById('Form2');
+      var Form3 = document.getElementById('Form3');
+
+      var Next1 = document.getElementById('Next1');
+      var Next2 = document.getElementById('Next2');
+      var Pervious1 = document.getElementById('Pervious1');
+      var Pervious2 = document.getElementById('Pervious2');
+
+      Next1.onclick = function () {
+        Form1.style.left = '-450px';
+        Form2.style.left = '40px';
+      };
+      Pervious1.onclick = function () {
+        Form1.style.left = '40px';
+        Form2.style.left = '450px';
+      };
+      Next2.onclick = function () {
+        Form2.style.left = '-450px';
+        Form3.style.left = '40px';
+      };
+      Pervious2.onclick = function () {
+        Form2.style.left = '40px';
+        Form3.style.left = '450px';
+      };
+    </script>
   </body>
 </html>
