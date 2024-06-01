@@ -14,7 +14,7 @@
   position: relative;
 }
 h1 {
-  text-align: rigtcenter;
+  text-align: right center;
   margin-bottom: 40px;
   color: solid black;
 }
@@ -25,9 +25,9 @@ h1 {
   left: 40px;
 }
 form input {
-  width: 150px;
-  padding: 18px 8 px;
-  margin: 10px 0;
+  width: 100%;
+  padding: 10px 5 px;
+  margin: 5px 0;
   border: 0;
   border-bottom: 1px solid #999;
   outline: none;
@@ -37,18 +37,23 @@ form input {
   color: #777;
 }
 .btn-box {
-  width: 100px;
+  width: 100%;
   margin: 30px auto;
   text-align: center;
 }
 form button {
-  width: 100px;
-  height: 40px;
+  width: 110px;
+  height: 35px;
   margin: 0 10px;
   border-radius: 30px;
   border: 0;
   outline: none;
-  position: left;
   color: #fff;
   cursor: pointer;
+}
+#Form2 {
+  left: 450px;
+}
+#Form3 {
+  left: -450px;
 }

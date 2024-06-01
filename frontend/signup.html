@@ -5,8 +5,11 @@
   </head>
   <body>
     <div class="container">
-      <form>
+      <form id="Form1">
         <h1>Sign up</h1>
+        <div class="input type">
+          <input type="Username" placeholder="Username" required />
+        </div>
         <div class="input type">
           <input type="text" placeholder="Email" required />
         </div>
@@ -19,6 +22,40 @@
 
         <div class="btn-box">
           <button type="button">Next</button>
+        </div>
+      </form>
+
+      <form id="Form2">
+        <h3>Personal info</h3>
+        <div class="input type">
+          Gender <input type="Radio" reqired />Male
+          <input type="Radio" name="Gender" required />Female
+        </div>
+        <div class="input type">
+          <input type="number" name="Age" required />Age
+        </div>
+        <div class="input type">
+          <input type="number" name="weight" required />Weight
+          <input type="number" name="height" required />Height
+        </div>
+
+        <div class="btn-box">
+          <button type="button">Pervious</button>
+          <button type="button">Next</button>
+        </div>
+      </form>
+      <form id="Form3">
+        <h3>Goal</h3>
+        <div class="input type">
+          <input type="Radio" />Weight Loss <input type="Radio" />Weight Gain
+        </div>
+        <div class="input type">
+          How Active Are You? <input type="Radio" />Highly Active
+          <input type="Radio" />Less Active <input type="Radio" />Medium Active
+        </div>
+        <div class="btn-box">
+          <button type="button">Pervious</button>
+          <button type="button">Submit</button>
         </div>
       </form>
     </div>
