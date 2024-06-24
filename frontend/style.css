@@ -303,13 +303,24 @@ footer {
 #youtube {
   position: absolute;
   left: 35px;
-  top: 67.5%;
+  top: 64%;
 }
 #linkedin {
   position: absolute;
   left: 35px;
-  top: 70.5%; 
- } 
+  top: 60.3%;
+}
+#Instagram {
+  position: absolute;
+  left: 35px;
+  top: 56.7%;
+}
+#Facebook {
+  position: absolute;
+  left: 35px;
+  top: 53.1%;
+}
+
 .footer-section form {
   display: flex;
   flex-direction: column;
