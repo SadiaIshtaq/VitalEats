@@ -232,3 +232,29 @@ select {
   top: 0;
   border-left: 20px solid #333;
 }
+.container-process{
+  border:2px solid yellow;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  height:100%;
+  flex-wrap: wrap;
+  margin-top:20px;
+
+}
+.container-upper{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  border:2px solid black;
+  width:479px;
+  margin-left:450px;
+  padding:40px;
+}
+.box{
+  border:2px solid black;
+  margin:20px;
+  width:540px;
+  height:200px;
+  padding:40px;
+}
