@@ -300,16 +300,16 @@ footer {
 .footer-section ul li {
   margin: 10px 0;
 }
-.footer-section i {
+#youtube {
   position: absolute;
   left: 35px;
   top: 67.5%;
 }
-.footer-section i {
+#linkedin {
   position: absolute;
   left: 35px;
-  top: ;
-}
+  top: 70.5%; 
+ } 
 .footer-section form {
   display: flex;
   flex-direction: column;
