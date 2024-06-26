@@ -303,22 +303,23 @@ footer {
 #youtube {
   position: absolute;
   left: 35px;
-  top: 63%;
+  top: 82%;
 }
 #linkedin {
   position: absolute;
   left: 35px;
-  top: 59.7%;
+  top: 78%;
 }
 #Instagram {
   position: absolute;
   left: 35px;
-  top: 56.2%;
+  top: 73%;
+
 }
 #Facebook {
   position: absolute;
   left: 35px;
-  top: 52.4%;
+  top: 68.6%;
 }
 
 .footer-section form {
@@ -362,4 +363,30 @@ footer {
 
 .footer-bottom a:hover {
   text-decoration: underline;
+}
+.links li{
+  list-style: none;
+}
+.links a{
+  text-decoration: none;
+  font-size: 1rem;
+}
+.action_btn a{
+  text-decoration: none;
+  font-size: 1rem;
+}
+.logo a{
+  text-decoration: none;
+  font-size: 1rem;
+}
+a:hover{
+  color:orange;
+  /* Need to chang according to our design */
+}
+header{
+  position:relative;
+  padding:0 32px;
+}
+.navbar{
+  width:100%;
 }
