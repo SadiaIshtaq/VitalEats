@@ -371,13 +371,26 @@ footer {
   text-decoration: none;
   font-size: 1rem;
 }
-.action_btn a{
+.action_btn {
+  background-color: beige;/*NEED TO CHANGE IT ACCORDING TO OUR STYLE OF THE WEB SITE*/
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  padding:0.5rem 1rem;
+  border:none;
+  outline:none;
+  border-radius:20px;
+  font-weight: bold;
+  cursor:pointer;
+  transition:scale 0.2 ease;
 }
+.action_btn:hover{
+  scale:1.05;
+}
+
 .logo a{
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 a:hover{
   color:orange;
@@ -389,4 +402,21 @@ header{
 }
 .navbar{
   width:100%;
+  height:60px;
+  max-width :1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.navbar .links{
+  display:flex;
+  gap:2rem;
+
+}
+.navbar .toggle_btn{
+  font-size: 1.5rem;
+  cursor:pointer;
+  display:none;
 }
